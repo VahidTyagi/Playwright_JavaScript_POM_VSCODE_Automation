@@ -30,10 +30,15 @@ test.describe('Homepage Test Cases', () => {
     await homePage.verifyMainBannerVisible();
   });
 
-  test('TC05 - Add Product To Cart From Homepage', async ({ page }) => {
-    const homePage = new HomePage(page);
-    await homePage.addProductToCart();
-  });
+  // test('TC05 - Add Product To Cart From Homepage', async ({ page }) => {
+  //   const homePage = new HomePage(page);
+  //   await homePage.addProductToCart();
+  // });
+
+  test('TC05 - Add Product To Cart With State Validation', async ({ page }) => {
+  const homePage = new HomePage(page);
+  await homePage.addProductAndValidateCart();
+});
 
   test('TC06 - Verify Authorized Sellers Section', async ({ page }) => {
     const homePage = new HomePage(page);
