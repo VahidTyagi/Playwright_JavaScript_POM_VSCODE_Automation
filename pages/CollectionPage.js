@@ -79,6 +79,7 @@ class CollectionPage {
   async decreaseQuantity() {
     await this.decreaseQtyBtn.click();
   }
+  
 
   async openCartFromHeader() {
     await this.headerCartButton.click();
