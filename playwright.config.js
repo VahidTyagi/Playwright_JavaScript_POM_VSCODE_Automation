@@ -6,6 +6,7 @@ module.exports = defineConfig({
   testDir: './tests',
   timeout: 30000,
   retries: 1,
+  workers: 5,
   use: {
     baseURL: 'https://store.wellversed.in/',
     headless: false,

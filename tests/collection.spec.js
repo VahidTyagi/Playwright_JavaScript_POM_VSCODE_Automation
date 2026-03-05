@@ -29,7 +29,7 @@ test.describe('Collection Module - Independent Tests', () => {
     expect(count).toBeGreaterThan(0);
   });
 
-  test.only('TC05 - Add First Product To Cart', async ({ page }) => {
+  test('TC05 - Add First Product To Cart', async ({ page }) => {
     const collection = new CollectionPage(page);
     await collection.gotoCollectionDirect();
     await collection.addFirstProductToCart();
